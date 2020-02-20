@@ -1,3 +1,18 @@
+This is a fork of Diego Casorran version of Netcat.
+The original project location is: https://github.com/diegocr/netcat.git
+In this fork, the executable file is removed and a Makefile for building the 
+program under Windows with mingw32 or mingw64 is added.
+
+To build: Make sure that the Mingw binary directory is in your path 
+and run the following command:
+
+mingw32-make -f makefile.mingw
+
+Sincerely,
+   Stefan Wosnik
+
+Below you will find the original README file:
+
 
  )\  )\   )\.---.  .-,.-.,-.    )\.-.     /`-.   .-,.-.,-. 
 (  \, /  (   ,-._( ) ,, ,. (  ,' ,-,_)  ,' _  \  ) ,, ,. ( 
