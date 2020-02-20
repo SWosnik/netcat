@@ -8,6 +8,8 @@ and run the following command:
 
 mingw32-make -f makefile.mingw
 
+Note for Mingw64: Currently only the creation of a 32-bit program (i686 toolchain) is supported.
+
 Sincerely,
    Stefan Wosnik
 
