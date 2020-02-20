@@ -1,0 +1,16 @@
+EXECUTABLE=nc.exe
+
+CC=gcc
+LDFLAGS=-O3 -march=i686 -DTELNET -lkernel32 -luser32 -lwinmm -lws2_32
+
+src = $(wildcard *.c)
+obj = $(src:.c=.o)
+
+all: myprog
+
+myprog: $(obj)
+	$(CC) -o $(EXECUTABLE) $^ $(LDFLAGS)
+
+.PHONY: clean
+clean:
+	del $(obj) $(EXECUTABLE)
